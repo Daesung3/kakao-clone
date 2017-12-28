@@ -1,3 +1,1 @@
-# kakao-clone
-
-Kaka Desktop App Clone
+# kakao-clone-examples
