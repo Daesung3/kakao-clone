@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--해당 link:css + 단축키 후, href= 뒷부분에 해당 사이트 url 삽입 위의 경우 (bootstrapcdn font awesome)-->
   <title>Friends</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class="top-header">
     <div class="header__top">
       <div class="header__column">
         <i class="fa fa-fighter-jet" aria-hidden="true"></i>
@@ -32,7 +33,7 @@
         <span class="header__text">Friends <span class="header__number">1</span></span>
       </div>
       <div class="header__column">
-        <i class="fa fa-cog" aria-hidden="true"></i>
+        <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
       </div>
     </div>
   </header>
@@ -42,42 +43,44 @@
       <input type="text" placeholder="Find friends, chats, Plus Friends">
       <!-- input은 글자 넣는 곳, placeholder란, 그 상자 안에 넣을 말 -->
     </div>
-    <section class="friends__section>
-      <header>
+    <section class="friends__section">
+      <header class="friends__section-header">
         <h6 class="friends__section-title">My Profile</h6>
       </header>
       <div class="friends__section-rows">
         <div class="friends__section-row">
-          <img src="" alt="">
-          <span class="friends__section-name">Daesung Kim</span>
+          <a href="profile.html">
+            <img src="images/avatar.png" alt="">
+          Daesung Kim
+          </a>
         </div>
           <div class="friends__section-row">
-            <img src="" alt="">
+            <img src="images/avatar.png" alt="">
             <span class="friends__section-name">Friends' Names Display</span>
       </div>
      </div>
     </section>
-    <section class="friends__section">
-      <header class="friends__section-header">
-        <h6 class="friends__section-title"></h6>
-      </header>
-      <div class="friends__section-rows">
-          <div class="friends__section-row">
-            <div class="friends__section-column">
-              <img src="" alt="">
-              <span class="friends__section-name">Daesung Kim</span>
-            </div>
-            <span class="friends__section-tagline">
-              Life is short. So live your life
-            </span>
-      </div>
-     </div>
-    </section>
+      <section class="friends__section">
+        <header class="friends__section-header">
+          <h6 class="friends__section-title"></h6>
+        </header>
+        <div class="friends__section-rows">
+            <div class="friends__section-row with-tagline">
+              <div class="friends__section-column">
+                <img src="images/avatar.png" alt="">
+                <span class="friends__section-name">LYNN</span>
+              </div>
+              <span class="friends__section-tagline">
+                Life is short. So live your life
+              </span>
+        </div>
+       </div>
+      </section>
   </main>
   <nav class="tab-bar">
     <!-- 이 부분은 카톡 하단의 아래 부분이다 -->
     <a href="index.html" class="tab-bar__tab tab-bar__tab--selected">
-      <!-- 이 부분이 선택 되었다고 말하는 부분 tab-bar__tab--selected -->
+      <!-- 이 부분이 선택 되었다고 말하는 부분 tab-bar__tab-selected -->
       <i class="fa fa-user"></i>
       <span class="tab-bar__title">Friends</span>
     </a>
@@ -89,10 +92,13 @@
       <i class="fa fa-search"></i>
       <span class="tab-bar__title">Find</span>
     </a>
-    <a href="more.html" class="tab-bar__tab">
+    <a href="find.html" class="tab-bar__tab">
       <i class="fa fa-ellipsis-h"></i>
       <span class="tab-bar__title">More</span>
     </a>
   </nav>
+  <div class="bigScreenText">
+    <span>Please make your screen smaller</span>
+  </div>
 </body>
 </html>

@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Chats</title>
+      <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class="top-header">
     <div class="header__top">
       <div class="header__column">
         <i class="fa fa-fighter-jet" aria-hidden="true"></i>
@@ -28,8 +29,9 @@
       <div class="header__column"><span class="header__text">Edit</span>
       </div>
       <div class="header__column">
-        <span class="header__text">Chats <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+        <span class="header__text">Chats<i class="fa fa-caret-down" aria-hidden="true"></i></span>
       </div>
+      <div class="header__column"></div>
     </div>
   </header>
   <main class="chats">
@@ -39,28 +41,33 @@
     </div>
     <ul class="chats__list">
         <li class="chats__chat">
-          <div class="chat__content">
-            <img src="images/avatar.jpg" alt="">
-            <div class="chat__preview">
-              <h3 class="chat__user">Lynn</h3>
-              <span class="chat__last-message">Hello! This is test message.</span>
+          <a href="chat.html">
+            <div class="chat__content">
+              <img src="images/avatar.png">
+              <div class="chat__preview">
+                <h3 class="chat__user">Lynn</h3>
+                <span class="chat__last-message">Hello! This is test message.</span>
+              </div>
             </div>
-          </div>
-            <span class="chat__date-time">
-              15:55
-            </span>
-        </li
+              <span class="chat__date-time">
+                15:55
+              </span>
+          </a>
+        </li>
         <li class="chats__chat">
-          <div class="chat__content">
-            <img src="images/avatar.png" alt="">
-            <div class="chat__preview">
-              <h3 class="chat__user">KakaoTalk</h3>
-              <span class="chat__last-message">You logged into KakaoTalk PC from the PC</span>
+          <a href="chat.html">
+            <!-- 링크 걸어주기 -->
+            <div class="chat__content">
+              <img src="images/avatar.png" alt="">
+              <div class="chat__preview">
+                <h3 class="chat__user">KakaoTalk</h3>
+                <span class="chat__last-message">You logged into KakaoTalk PC from the PC</span>
+              </div>
             </div>
-          </div>
-            <span class="chat__date-time">
-              Dec 21
-            </span>
+              <span class="chat__date-time">
+                Dec 21
+              </span>
+            </a>
         </li>
     </ul>
     <div class="chat-btn">
@@ -85,5 +92,8 @@
       <span class="tab-bar__title">More</span>
     </a>
   </nav>
+  <div class="bigScreenText">
+    <span>Please make your screen smaller</span>
+  </div>
 </body>
 </html>
